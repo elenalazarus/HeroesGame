@@ -7,6 +7,7 @@ public class Hobbit extends Character{
 
     public void kick(Character c) {
         toCry();
+        this.setHp(0);
     }
 
     private void toCry(){

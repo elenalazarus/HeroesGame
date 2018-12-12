@@ -9,10 +9,10 @@ public class King extends SwordsMan{
 
     public void kick(Character c) {
         if (c.getPower() < this.getPower()) {
-            System.out.println("King killed character");
+            System.out.println("King kicked character");
             c.setHp(c.getHp() - this.getPower());
         } else {
-            this.setHp(this.getHp() - c.getPower());
+            this.setHp(this.getHp() - 1);
         }
     }
 
